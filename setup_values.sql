@@ -680,3 +680,12 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_santeem_50",
 INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_wark_fractional_1_4","eth_wark","1/4",0.25);
 INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_wark_fractional_1_2","eth_wark","1/2",0.5);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_wark_1","eth_wark",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_yang_1","kor_yang",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_yang_5","kor_yang",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_whan_1","kor_whan",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_chon_10","kor_chon",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_chon_20","kor_chon",20);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("kor_won_fractional_1_2","kor_won","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_won_5","kor_won",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_won_10","kor_won",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("kor_won_20","kor_won",20);

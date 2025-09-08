@@ -213,3 +213,7 @@ INSERT INTO denominations(denomination_id,country_id,name) VALUES("eth_gersh","e
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("eth_birr","eth","birr","birrs");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("eth_santeem","eth","santeem");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("eth_wark","eth","wark","warks");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_yang","kor","yang");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_whan","kor","whan");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_chon","kor","chon");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_won","kor","won");
