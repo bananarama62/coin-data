@@ -1045,3 +1045,11 @@ INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_wei
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("sau_sovereign_1_1","sau_sovereign_1",7.9881,0.917,0.2355,"1945, 1946, 1947","au");
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("sau_sovereign_4_1","sau_sovereign_4",31.9522,0.917,0.942,"1945, 1946, 1947","au");
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("sau_guinea_1_1","sau_guinea_1",7.9881,0.917,0.2355,"1951, 1957","au");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_piastre_10_1","syr_piastre_10",2,0.68,0.0437,"1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_piastre_25_1","syr_piastre_25",5,0.68,0.1093,"1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_piastre_50_1","syr_piastre_50",10,0.68,0.2186,"1929, 1930, 1931, 1932, 1933, 1934, 1935, 1936, 1937","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_piastre_25_2","syr_piastre_25",2.5,0.6,0.0482,"1947, 1948, 1949, 1950","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_piastre_50_2","syr_piastre_50",5,0.6,0.0965,"1947, 1948, 1949, 1950","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_lira_1_1","syr_lira_1",10,0.68,0.2186,"1947, 1948, 1949, 1950","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_pound_fractional_1_2_1","syr_pound_fractional_1_2",3.3793,0.9,0.0978,"1950","au");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("syr_pound_1_1","syr_pound_1",6.7586,0.9,0.1956,"1950","au");

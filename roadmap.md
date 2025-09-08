@@ -10,7 +10,6 @@
 * Newfoundland
 * New Zealand
 * South Africa, Union of
-* Syria
 * Thailand
 * Turkey
 * United Arab Republic

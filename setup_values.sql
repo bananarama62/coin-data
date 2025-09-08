@@ -665,3 +665,9 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_riyal_1","sa
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_sovereign_1","sau_sovereign",1);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_sovereign_4","sau_sovereign",4);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_guinea_1","sau_guinea",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_piastre_10","syr_piastre",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_piastre_25","syr_piastre",25);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_piastre_50","syr_piastre",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_lira_1","syr_lira",1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("syr_pound_fractional_1_2","syr_pound","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_pound_1","syr_pound",1);
