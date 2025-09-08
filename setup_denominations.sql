@@ -196,3 +196,7 @@ INSERT INTO denominations(denomination_id,country_id,name) VALUES("fji_florin","
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("irq_fils","irq","fils");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("irq_riyal","irq","riyal","riyals");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1,alternative_name_2) VALUES("ltu_litas","ltu","litas","litu","litai");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("mng_mongo","mng","mongo");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("mng_tukhrik","mng","tukhrik");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("pan_centesimo","pan","centesimo","centesimos");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("pan_balboa","pan","balboa","balboas");

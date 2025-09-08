@@ -635,3 +635,17 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("ltu_litas_1","lt
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("ltu_litas_2","ltu_litas",2);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("ltu_litas_5","ltu_litas",5);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("ltu_litas_10","ltu_litas",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("mng_mongo_10","mng_mongo",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("mng_mongo_15","mng_mongo",15);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("mng_mongo_20","mng_mongo",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("mng_mongo_50","mng_mongo",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("mng_tukhrik_1","mng_tukhrik",1);
+INSERT INTO face_values(value_id,denomination_id,name,alternative_name_1,alternative_name_2,value) VALUES("pan_centesimo_fractional_2_1_2","pan_centesimo","2-1/2","2 1/2","5/2",2.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_centesimo_5","pan_centesimo",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_centesimo_10","pan_centesimo",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_centesimo_25","pan_centesimo",25);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_centesimo_50","pan_centesimo",50);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_fractional_1_10","pan_balboa","1/10",0.1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_fractional_1_4","pan_balboa","1/4",0.25);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_fractional_1_2","pan_balboa","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_balboa_1","pan_balboa",1);
