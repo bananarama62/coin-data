@@ -708,3 +708,9 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("mar_franc_500","
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_paisa_20","npl_paisa",20);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_paisa_50","npl_paisa",50);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_rupee_1","npl_rupee",1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("nzl_penny_3","nzl_penny","threepence",3);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("nzl_penny_6","nzl_penny","sixpence",6);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nzl_shilling_1","nzl_shilling",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nzl_florin_1","nzl_florin",1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("nzl_crown_fractional_1_2","nzl_crown","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nzl_crown_1","nzl_crown",1);

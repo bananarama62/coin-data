@@ -222,3 +222,7 @@ INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VA
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("mar_franc","mar","franc","francs");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("npl_paisa","npl","paisa");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("npl_rupee","npl","rupee","rupees");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("nzl_penny","nzl","penny","pence");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_shilling","nzl","shilling");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_florin","nzl","florin");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_crown","nzl","crown");
