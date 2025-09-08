@@ -217,3 +217,6 @@ INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_yang","ko
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_whan","kor","whan");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_chon","kor","chon");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("kor_won","kor","won");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("mar_dirham","mar","dirham");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("mar_rial","mar","rial","rials");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("mar_franc","mar","franc","francs");
