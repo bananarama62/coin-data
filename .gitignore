@@ -1,0 +1,9 @@
+test_*
+*.log
+setup.sql
+connect.py
+example.py
+commit_test.sh
+purchases.bak
+purchases.sql
+
