@@ -74,3 +74,14 @@ INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alte
 INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) VALUES("phl","philippines","the philippines","filipino","republic of the philippines","the republic of the philippines","pilipinas");
 INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3) VALUES("sau","saudi arabia","saudi arabian","saudi","kingdom of saudi arabia");
 INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2) VALUES("syr","syria","syrian","syrian arab republic");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2) values("eth","ethiopia","ethiopian","federal democratic republic of ethiopia");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3) values("gtm","guatemala","guatemalan","republic of guatemala","republica de guatemala");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3) values("irn","iran","irani","islamic republic of iran","republic of iran");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) values("kor","korea","korean","republic of korean","south korea","s korea","s. korea");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2) values("lie","liechtenstein","principality of liechtenstein","furstentum liechtenstein");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2) values("mar","morocco","moroccan","kingdom of morocco");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) values("npl","nepal","nepalese","federal democratic republic of nepal","republic of nepal","nepala","democratic republic of nepal");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2) values("nzl","new zealand","zealand","aotearoa");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2) values("tha","thailand","thai","kingdom of thailand");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) values("tur","turkey","turkiye","turkish","republic of turkey","republic of turkiye","turkiye cumhuriyeti");
+insert into countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) values("ury","uruguay","uruguai","oriental republic of uruguay","republic of uruguay","republica oriental del uruguay","republica oriental do uruguai");
