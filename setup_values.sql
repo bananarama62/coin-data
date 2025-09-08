@@ -671,3 +671,12 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_piastre_50",
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_lira_1","syr_lira",1);
 INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("syr_pound_fractional_1_2","syr_pound","1/2",0.5);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("syr_pound_1","syr_pound",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_gersh_1","eth_gersh",1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_birr_fractional_1_8","eth_birr","1/8",0.125);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_birr_fractional_1_4","eth_birr","1/4",0.25);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_birr_fractional_1_2","eth_birr","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_birr_1","eth_birr",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_santeem_50","eth_santeem",50);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_wark_fractional_1_4","eth_wark","1/4",0.25);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("eth_wark_fractional_1_2","eth_wark","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("eth_wark_1","eth_wark",1);

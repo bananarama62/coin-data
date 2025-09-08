@@ -209,3 +209,7 @@ INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VA
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("syr_piastre","syr","piastre","piastres");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("syr_lira","syr","lira","lire");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("syr_pound","syr","pound","pounds");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("eth_gersh","eth","gersh");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("eth_birr","eth","birr","birrs");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("eth_santeem","eth","santeem");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("eth_wark","eth","wark","warks");
