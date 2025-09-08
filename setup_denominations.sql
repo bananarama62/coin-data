@@ -200,3 +200,6 @@ INSERT INTO denominations(denomination_id,country_id,name) VALUES("mng_mongo","m
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("mng_tukhrik","mng","tukhrik");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("pan_centesimo","pan","centesimo","centesimos");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("pan_balboa","pan","balboa","balboas");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_centimo","phl","centimo","centimos");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_peso","phl","peso","pesos");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_centavo","phl","centavo","centavos");

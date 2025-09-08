@@ -649,3 +649,13 @@ INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_
 INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_fractional_1_4","pan_balboa","1/4",0.25);
 INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("pan_balboa_fractional_1_2","pan_balboa","1/2",0.5);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("pan_balboa_1","pan_balboa",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centimo_10","phl_centimo",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centimo_20","phl_centimo",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centimo_50","phl_centimo",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_peso_1","phl_peso",1);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("phl_peso_fractional_1_2","phl_peso","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_peso_2","phl_peso",2);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_peso_4","phl_peso",4);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_10","phl_centavo",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_20","phl_centavo",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_50","phl_centavo",50);

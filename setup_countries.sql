@@ -71,3 +71,4 @@ INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2) VAL
 INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4) VALUES("ltu","lithuania","republic of lithuania","lietuvos","lietuvos respublika","lithuanian");
 INSERT INTO countries(country_id,name,alternative_name_1) VALUES("mng","mongolia","mongolian");
 INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3) VALUES("pan","panama","panamanian","republic of panama","republica de panama");
+INSERT INTO countries(country_id,name,alternative_name_1,alternative_name_2,alternative_name_3,alternative_name_4,alternative_name_5) VALUES("phl","philippines","the philippines","filipino","republic of the philippines","the republic of the philippines","pilipinas");
