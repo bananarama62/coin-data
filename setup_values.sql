@@ -705,3 +705,6 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("mar_franc_20","m
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("mar_franc_100","mar_franc",100);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("mar_franc_200","mar_franc",200);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("mar_franc_500","mar_franc",500);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_paisa_20","npl_paisa",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_paisa_50","npl_paisa",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("npl_rupee_1","npl_rupee",1);

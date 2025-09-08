@@ -4,7 +4,6 @@
 * Israel
 * Korea
 * Liechtenstein
-* Nepal
 * Newfoundland
 * New Zealand
 * South Africa, Union of

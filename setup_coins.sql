@@ -1092,3 +1092,9 @@ INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_wei
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("mar_franc_200_1","mar_franc_200",8,0.72,0.1852,"1953","au");
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("mar_franc_500_1","mar_franc_500",22.5,0.9,0.6511,"1956","au");
 INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("mar_dirham_1_2","mar_dirham_1",6,0.6,0.1157,"1960","au");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_paisa_20_1","npl_paisa_20",2.2161,0.333,0.0237,"1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_paisa_50_1","npl_paisa_50",5.5403,0.8,0.1425,"1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_rupee_1_1","npl_rupee_1",11.0806,0.8,0.285,"1932, 1933, 1934, 1935, 1936, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1945, 1946, 1947, 1948","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_paisa_20_2","npl_paisa_20",2.2161,0.333,0.0237,"1948, 1949, 1950, 1951, 1952, 1953","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_paisa_50_2","npl_paisa_50",5.5403,0.333,0.0593,"1948, 1949, 1950, 1951, 1952, 1953","ag");
+INSERT INTO coins(coin_id,face_value_id,gross_weight,fineness,precious_metal_weight,years,metal) VALUES("npl_rupee_1_2","npl_rupee_1",11.0806,0.333,0.1186,"1948, 1949, 1950, 1951, 1952, 1953","ag");
