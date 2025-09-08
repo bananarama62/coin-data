@@ -659,3 +659,9 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_peso_4","phl
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_10","phl_centavo",10);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_20","phl_centavo",20);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("phl_centavo_50","phl_centavo",50);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("sau_riyal_fractional_1_4","sau_riyal","1/4",0.25);
+INSERT INTO face_values(value_id,denomination_id,name,value) VALUES("sau_riyal_fractional_1_2","sau_riyal","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_riyal_1","sau_riyal",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_sovereign_1","sau_sovereign",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_sovereign_4","sau_sovereign",4);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("sau_guinea_1","sau_guinea",1);

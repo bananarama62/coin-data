@@ -203,3 +203,6 @@ INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VA
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_centimo","phl","centimo","centimos");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_peso","phl","peso","pesos");
 INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("phl_centavo","phl","centavo","centavos");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("sau_riyal","sau","riyal","riyals");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("sau_sovereign","sau","sovereign","sovereigns");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("sau_guinea","sau","guinea","guineas");

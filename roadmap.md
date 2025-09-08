@@ -9,7 +9,6 @@
 * Nepal
 * Newfoundland
 * New Zealand
-* Saudi Arabia
 * South Africa, Union of
 * Syria
 * Thailand
