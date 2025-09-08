@@ -226,3 +226,11 @@ INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VA
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_shilling","nzl","shilling");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_florin","nzl","florin");
 INSERT INTO denominations(denomination_id,country_id,name) VALUES("nzl_crown","nzl","crown");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_penny","zaf","penny","pence");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_shilling","zaf","shilling","shillings");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_cent","zaf","cent","cents");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_pond","zaf","pond","ponds");
+INSERT INTO denominations(denomination_id,country_id,name) VALUES("zaf_rand","zaf","rand");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_florin","zaf","florin","florins");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_sovereign","zaf","sovereign","sovereigns");
+INSERT INTO denominations(denomination_id,country_id,name,alternative_name_1) VALUES("zaf_pound","zaf","pound","pounds");

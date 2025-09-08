@@ -5,7 +5,6 @@
 * Korea
 * Liechtenstein
 * Newfoundland
-* South Africa, Union of
 * Thailand
 * Turkey
 * United Arab Republic
