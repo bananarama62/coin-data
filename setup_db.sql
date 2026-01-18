@@ -52,14 +52,16 @@ CREATE TABLE face_values (
   denomination_id varchar(255) NOT NULL,
   FOREIGN KEY (denomination_id) REFERENCES denominations(denomination_id) ON UPDATE CASCADE,
   value decimal(20,10) NOT NULL,
-  name varchar(255),
+  display_name varchar(255),
   tags varchar(255) DEFAULT "none",
-  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
-  alternative_name_1 varchar(255),
-  alternative_name_2 varchar(255),
-  alternative_name_3 varchar(255),
-  alternative_name_4 varchar(255),
-  alternative_name_5 varchar(255)
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE
+);
+
+CREATE TABLE face_values_names (
+  name_id INT AUTO_INCREMENT PRIMARY KEY,
+  value_id varchar(255) NOT NULL,
+  FOREIGN KEY (value_id) REFERENCES face_values(value_id) ON UPDATE CASCADE,
+  name varchar(255) NOT NULL
 );
 
 CREATE TABLE coins (
