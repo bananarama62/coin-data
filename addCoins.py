@@ -83,7 +83,7 @@ def addCountry(information):
         if not name:
             name = input("A name is required. Enter it here:")
             continue
-        for i in range(5):
+        while True:
             response = input("Alternative name? (enter empty string to skip): ")
             if response:
                 alternative_names.append(response.lower())
@@ -98,13 +98,10 @@ def addCountry(information):
             name = response
         else:
             break
-    query_string = "INSERT INTO countries(country_id,name" 
+    query_string = f'INSERT INTO countries(country_id,display_name) VALUES("{country_id}","{name}");'
+    query_string += f'INSERT INTO country_names(country_id,name) VALUES("{country_id}","{name}");'
     for i in range(len(alternative_names)):
-        query_string += f",alternative_name_{i+1}"
-    query_string += f') VALUES("{country_id}","{name}"'
-    for i in range(len(alternative_names)):
-        query_string += f',"{alternative_names[i]}"'
-    query_string += ");"
+        query_string += f'INSERT INTO country_names(country_id,name) VALUES("{country_id}","{alternative_names[i]}");'
     log(query_string)
     added_countries.append(country_id)
     queries_countries.append(query_string)
@@ -122,7 +119,7 @@ def addDenomination(information):
         if not name:
             name = input("A name is required. Enter it here:")
             continue
-        for i in range(5):
+        while True:
             response = input("Alternative name? (enter empty string to skip): ")
             if response:
                 alternative_names.append(response.lower())
@@ -137,13 +134,10 @@ def addDenomination(information):
             name = response
         else:
             break
-    query_string = "INSERT INTO denominations(denomination_id,country_id,name" 
+    query_string = f'INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("{prefix}_{code}","{prefix}","{name}");'
+    query_string += f'INSERT INTO denomination_names(denomination_id,name) VALUES("{prefix}_{code}","{name}");'
     for i in range(len(alternative_names)):
-        query_string += f",alternative_name_{i+1}"
-    query_string += f') VALUES("{prefix}_{code}","{prefix}","{name}"'
-    for i in range(len(alternative_names)):
-        query_string += f',"{alternative_names[i]}"'
-    query_string += ");"
+        query_string += f'INSERT INTO denomination_names(denomination_id,name) VALUES("{prefix}_{code}","{alternative_names[i]}");'
     log(query_string)
     added_denominations.append(f"{prefix}_{code}")
     queries_denominations.append(query_string)
@@ -182,7 +176,7 @@ def addValue(information):
             name = input(f"Value name for ({prefix}_{code}) (enter empty string to skip): ").lower()
             if not name:
                 break
-            for i in range(5):
+            while True:
                 response = input("Alternative name? (enter empty string to skip): ")
                 if response:
                     alternative_names.append(response.lower())
@@ -197,16 +191,13 @@ def addValue(information):
             break
     query_string = "INSERT INTO face_values(value_id,denomination_id" 
     if name:
-        query_string += ",name"
-        for i in range(len(alternative_names)):
-            query_string += f",alternative_name_{i+1}"
+        query_string += ",display_name"
     query_string += f',value) VALUES("{prefix}_{code}","{prefix}"'
     if name:
         query_string += f',"{name}"'
-        for i in range(len(alternative_names)):
-            query_string += f',"{alternative_names[i]}"'
-    query_string += f",{value}"
-    query_string += ");"
+    query_string += f",{value});"
+    for i in range(len(alternative_names)):
+        query_string += f'INSERT INTO face_values_names(value_id,name) VALUES("{prefix}_{code}",{alternative_names[i]});'
     log(query_string)
     added_values.append(f"{prefix}_{code}")
     queries_values.append(query_string)
