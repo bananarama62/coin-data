@@ -20,14 +20,15 @@ INSERT INTO tags(tag_id,bullion) VALUES("bullion",TRUE);
 
 CREATE TABLE countries (
   country_id varchar(255) PRIMARY KEY,
-  name varchar(255) NOT NULL,
+  display_name varchar(255) NOT NULL,
   tags varchar(255) default "none",
-  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
-  alternative_name_1 varchar(255),
-  alternative_name_2 varchar(255),
-  alternative_name_3 varchar(255),
-  alternative_name_4 varchar(255),
-  alternative_name_5 varchar(255)
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE
+);
+
+CREATE TABLE country_names (
+  name varchar(255) PRIMARY KEY,
+  country_id varchar(255) NOT NULL,
+  FOREIGN KEY (country_id) REFERENCES countries(country_id) ON UPDATE CASCADE
 );
 
 CREATE TABLE denominations (
