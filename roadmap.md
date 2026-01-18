@@ -8,7 +8,6 @@
 * Thailand
 * Turkey
 * United Arab Republic
-* Uruguay
 # Tier 4
 * Arabian Sultanates (Yemen)
 * Belgian Congo

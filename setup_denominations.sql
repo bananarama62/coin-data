@@ -894,3 +894,5 @@ INSERT INTO denomination_names(name,denomination_id) VALUES("shilling","zaf_shil
 INSERT INTO denomination_names(name,denomination_id) VALUES("shillings","zaf_shilling");
 INSERT INTO denomination_names(name,denomination_id) VALUES("sovereign","zaf_sovereign");
 INSERT INTO denomination_names(name,denomination_id) VALUES("sovereigns","zaf_sovereign");
+INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("ury_centesimo","ury","centesimo");INSERT INTO denomination_names(denomination_id,name) VALUES("ury_centesimo","centesimo");INSERT INTO denomination_names(denomination_id,name) VALUES("ury_centesimo","centesimos");
+INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("ury_peso","ury","peso");INSERT INTO denomination_names(denomination_id,name) VALUES("ury_peso","peso");INSERT INTO denomination_names(denomination_id,name) VALUES("ury_peso","pesos");

@@ -1678,3 +1678,9 @@ INSERT INTO face_values_names(name,value_id) VALUES("2-1/2","zaf_shilling_fracti
 INSERT INTO face_values_names(name,value_id) VALUES("2 1/2","zaf_shilling_fractional_2_1_2");
 INSERT INTO face_values_names(name,value_id) VALUES("5/2","zaf_shilling_fractional_2_1_2");
 INSERT INTO face_values_names(name,value_id) VALUES("1/2","zaf_sovereign_fractional_1_2");
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_centesimo_10","ury_centesimo",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_centesimo_20","ury_centesimo",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_centesimo_50","ury_centesimo",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_peso_1","ury_peso",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_peso_10","ury_peso",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("ury_peso_5","ury_peso",5);
