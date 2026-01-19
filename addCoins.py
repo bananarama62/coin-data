@@ -169,7 +169,7 @@ def addValue(information):
                 whole_num_str = str(whole_num)+"-" if whole_num else ""
                 name = f"{whole_num_str}{numerator}/{denominator}"
                 if whole_num:
-                    alternative_names = [f"{whole_num_str}{numerator}/{denominator}".replace("-"," "),f"{numerator + whole_num*denominator}/{denominator}"]
+                    alternative_names = [name,f"{whole_num_str}{numerator}/{denominator}".replace("-"," "),f"{numerator + whole_num*denominator}/{denominator}"]
                 value = whole_num + numerator/denominator
 
         else:
