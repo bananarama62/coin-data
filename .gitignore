@@ -1,6 +1,7 @@
 test_*
 *.log
 setup.sql
+setup*.sql.bak
 connect.py
 example.py
 commit_test.sh
