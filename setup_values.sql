@@ -1053,3 +1053,11 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("tur_kurusmdl_50"
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tur_kurusmdl_100","tur_kurusmdl",100);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tur_kurusmdl_250","tur_kurusmdl",250);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tur_kurusmdl_500","tur_kurusmdl",500);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_ghirsh_5","uar_ghirsh",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_ghirsh_10","uar_ghirsh",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_ghirsh_25","uar_ghirsh",25);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_ghirsh_50","uar_ghirsh",50);
+INSERT INTO face_values(value_id,denomination_id,display_name,value) VALUES("uar_pound_fractional_1_2","uar_pound","1/2",0.5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_pound_1","uar_pound",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_pound_5","uar_pound",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("uar_pound_10","uar_pound",10);

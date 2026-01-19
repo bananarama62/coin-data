@@ -1,5 +1,3 @@
-# Tier 3
-* United Arab Republic
 # Tier 4
 * Arabian Sultanates (Yemen)
 * Belgian Congo
