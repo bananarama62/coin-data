@@ -1,5 +1,4 @@
 # Tier 3
-* Turkey
 * United Arab Republic
 # Tier 4
 * Arabian Sultanates (Yemen)
