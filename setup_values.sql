@@ -1732,3 +1732,9 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("irn_pahlavi_5","
 INSERT INTO face_values(value_id,denomination_id,display_name,value) VALUES("irn_pahlavi_fractional_1_4","irn_pahlavi","1/4",0.25);
 INSERT INTO face_values(value_id,denomination_id,display_name,value) VALUES("irn_pahlavi_fractional_1_2","irn_pahlavi","1/2",0.5);
 INSERT INTO face_values(value_id,denomination_id,display_name,value) VALUES("irn_pahlavi_fractional_2_1_2","irn_pahlavi","2-1/2",2.5);INSERT INTO face_values_names(value_id,name) VALUES("irn_pahlavi_fractional_2_1_2",2 1/2);INSERT INTO face_values_names(value_id,name) VALUES("irn_pahlavi_fractional_2_1_2",5/2);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pruta_250","isr_pruta",250);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pruta_500","isr_pruta",500);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pound_5","isr_pound",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pound_20","isr_pound",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pound_50","isr_pound",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("isr_pound_100","isr_pound",100);

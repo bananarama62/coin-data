@@ -1,5 +1,4 @@
 # Tier 3
-* Israel
 * Korea
 * Liechtenstein
 * Newfoundland
