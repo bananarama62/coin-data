@@ -1,6 +1,5 @@
 # Tier 3
 * Newfoundland
-* Thailand
 * Turkey
 * United Arab Republic
 # Tier 4

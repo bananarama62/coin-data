@@ -1753,3 +1753,12 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("lie_frank_20","l
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("lie_frank_25","lie_frank",25);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("lie_frank_50","lie_frank",50);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("lie_frank_100","lie_frank",100);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_salung_1","tha_salung",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_salung_2","tha_salung",2);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_baht_1","tha_baht",1);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_25","tha_satang",25);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_50","tha_satang",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_5","tha_satang",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_10","tha_satang",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_20","tha_satang",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_baht_20","tha_baht",20);
