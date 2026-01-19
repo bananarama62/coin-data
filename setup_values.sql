@@ -1762,3 +1762,9 @@ INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_5","t
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_10","tha_satang",10);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_satang_20","tha_satang",20);
 INSERT INTO face_values(value_id,denomination_id,value) VALUES("tha_baht_20","tha_baht",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_cent_5","nfl_cent",5);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_cent_10","nfl_cent",10);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_cent_20","nfl_cent",20);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_cent_50","nfl_cent",50);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_cent_25","nfl_cent",25);
+INSERT INTO face_values(value_id,denomination_id,value) VALUES("nfl_dollar_2","nfl_dollar",2);

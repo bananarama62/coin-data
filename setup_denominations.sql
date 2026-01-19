@@ -915,3 +915,5 @@ INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("lie_f
 INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("tha_salung","tha","salung");INSERT INTO denomination_names(denomination_id,name) VALUES("tha_salung","salung");
 INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("tha_baht","tha","baht");INSERT INTO denomination_names(denomination_id,name) VALUES("tha_baht","baht");
 INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("tha_satang","tha","satang");INSERT INTO denomination_names(denomination_id,name) VALUES("tha_satang","satang");
+INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("nfl_cent","nfl","cent");INSERT INTO denomination_names(denomination_id,name) VALUES("nfl_cent","cent");INSERT INTO denomination_names(denomination_id,name) VALUES("nfl_cent","cents");
+INSERT INTO denominations(denomination_id,country_id,display_name) VALUES("nfl_dollar","nfl","dollar");INSERT INTO denomination_names(denomination_id,name) VALUES("nfl_dollar","dollar");INSERT INTO denomination_names(denomination_id,name) VALUES("nfl_dollar","dollars");

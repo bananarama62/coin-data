@@ -430,3 +430,4 @@ INSERT INTO country_names(name,country_id) VALUES("s. africa","zaf");
 INSERT INTO country_names(name,country_id) VALUES("s african","zaf");
 INSERT INTO country_names(name,country_id) VALUES("s. african","zaf");
 INSERT INTO countries(country_id,display_name) VALUES("isr","israel");INSERT INTO country_names(country_id,name) VALUES("isr","israel");INSERT INTO country_names(country_id,name) VALUES("isr","israeli");INSERT INTO country_names(country_id,name) VALUES("isr","state of israel");
+INSERT INTO countries(country_id,display_name) VALUES("nfl","newfoundland");INSERT INTO country_names(country_id,name) VALUES("nfl","newfoundland");INSERT INTO country_names(country_id,name) VALUES("nfl","new foundland");INSERT INTO country_names(country_id,name) VALUES("nfl","new found land");INSERT INTO country_names(country_id,name) VALUES("nfl","foundland");
