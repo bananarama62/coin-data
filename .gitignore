@@ -8,3 +8,4 @@ commit_test.sh
 purchases.bak
 purchases.sql
 purchases.*.sql
+backups/*
