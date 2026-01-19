@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS coin_data;
 CREATE DATABASE coin_data;
 USE coin_data;
 
