@@ -1,5 +1,4 @@
 # Tier 3
-* Guatemala
 * Iran
 * Israel
 * Korea
