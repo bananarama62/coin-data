@@ -1,5 +1,4 @@
 # Tier 3
-* Iran
 * Israel
 * Korea
 * Liechtenstein
