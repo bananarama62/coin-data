@@ -1,6 +1,4 @@
 # Tier 3
-* Korea
-* Liechtenstein
 * Newfoundland
 * Thailand
 * Turkey
