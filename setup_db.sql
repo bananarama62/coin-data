@@ -72,12 +72,20 @@ CREATE TABLE coins (
   gross_weight decimal(20,10) NOT NULL,
   fineness decimal(11,10) NOT NULL,
   precious_metal_weight decimal(20,10),
-  years varchar(1024) NOT NULL,
   tags varchar(255) DEFAULT "none",
   FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
   metal varchar(5) NOT NULL,
   FOREIGN KEY (metal) REFERENCES metals(metal_id) ON UPDATE CASCADE,
   name varchar(255)
+);
+
+CREATE TABLE years (
+  coin_id varchar(255) NOT NULL,
+  year int NOT NULL,
+  FOREIGN KEY (coin_id) REFERENCES coins(coin_id) ON UPDATE CASCADE,
+  tags varchar(255) DEFAULT "none",
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
+  PRIMARY KEY(coin_id,year)
 );
 
 CREATE TABLE specific_coins (
