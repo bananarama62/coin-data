@@ -327,15 +327,18 @@ def addCoin(information):
                     information["years"] = years
                     break
 
+    coin_id = f"{prefix}_{code}"
     query_string = "INSERT INTO coins(coin_id,face_value_id" 
     if information["nickname"]:
         query_string += ",name"
-    query_string += ",gross_weight,fineness,precious_metal_weight,years,metal"
-    query_string += f') VALUES("{prefix}_{code}","{prefix}"'
+    query_string += ",gross_weight,fineness,precious_metal_weight,metal"
+    query_string += f') VALUES("{coin_id}","{prefix}"'
     if information["nickname"]:
         query_string += f',"{information["nickname"]}"'
-    query_string += f',{information["gross_weight"]},{information["fineness"]},{information["precious_metal_weight"]},"{information["years"]}","{information["metal"]}"'
+    query_string += f',{information["gross_weight"]},{information["fineness"]},{information["precious_metal_weight"]},{information["metal"]}"'
     query_string += ");"
+    for year in information["years"].split(","):
+        query_string += f"INSERT INTO years(coin_id,year) VALUES(\"{coin_id}\",{year});"
     log(query_string)
     added_coins.append(f"{prefix}_{code}")
     queries_coins.append(query_string)
