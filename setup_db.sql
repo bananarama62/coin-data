@@ -1,7 +1,3 @@
-DROP DATABASE IF EXISTS coin_data;
-CREATE DATABASE coin_data;
-USE coin_data;
-
 CREATE TABLE metals (
   metal_id varchar(5) PRIMARY KEY,
   name varchar(255) NOT NULL,
