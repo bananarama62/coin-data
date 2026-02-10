@@ -13,7 +13,7 @@ CREATE TABLE metals (
   price_date date NOT NULL
 );
 -- Metal types
-insert into metals(metal_id,name,price,price_date) values("au","gold",-1,"1000-01-01"),("ag","silver",-1,"1000-01-01"),("pd","palladium",-1,"1000-01-01"),("pt","platinum",-1,"1000-01-01"),("rh","rhodium",-1,"1000-01-01"),("other","unknown",-1,"1000-01-01");
+insert into metals(metal_id,name,price,price_date) values("au","gold",-1,"1000-01-01"),("ag","silver",-1,"1000-01-01"),("pd","palladium",-1,"1000-01-01"),("pt","platinum",-1,"1000-01-01"),("rh","rhodium",-1,"1000-01-01"),("other","other",-1,"1000-01-01");
 
 CREATE TABLE tags (
   tag_id varchar(255) PRIMARY KEY,
