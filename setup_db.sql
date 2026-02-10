@@ -1,3 +1,11 @@
+CREATE TABLE version (
+  major INT(11),
+  minor INT(11),
+  PRIMARY KEY (major,minor)
+);
+
+INSERT INTO version(major,minor) VALUES(1,0);
+
 CREATE TABLE metals (
   metal_id varchar(5) PRIMARY KEY,
   name varchar(255) NOT NULL,
