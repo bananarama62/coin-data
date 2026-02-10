@@ -10,15 +10,18 @@ main () {
   database=$2
   dir=$3
 
+  # Defaults to CWD if one is not specified
   if [ -z "${dir}" ]; then
     dir="./"
   fi
-
+  
+  # User and database must be specified in command line
   if [ -z "${db_user}" -o -z "${database}" ]; then
     echo "Usage: $0 user database directory"
     exit 1
   fi
 
+  # Gets confirmation for continuing.
   echo "User: $db_user will connect to database: $database and use data from: $dir"
   read -p "Continue? (y)Yes/(n)No:- " choice
   case $choice in
@@ -32,9 +35,10 @@ main () {
   read PASSWORD
   printf "\n"
 
-  files=("setup_db.sql" "setup_countries.sql" "setup_denominations.sql" "setup_values.sql" "setup_coins.sql" "purchases.sql")
+  # List of all files that will be fed into database
+  files=("setup_db.sql" "setup_countries.sql" "setup_denominations.sql" "setup_values.sql" "setup_coins.sql" "setup_coins_years.sql" "purchases.sql")
 
-  
+  # Drops and recreates database
   mariadb --user=$db_user --password=$PASSWORD -e "DROP DATABASE IF EXISTS $database; CREATE DATABASE $database;"
   if [ $? -ne 0 ]; then
     exit 1
@@ -47,10 +51,18 @@ main () {
   array_length=${#files[@]}
   for (( i=0; i<${array_length}; ++i )); 
   do
-    echo ${dir}/${files[$i]}
-    mariadb --user=$db_user --password=$PASSWORD $database < ${dir}/${files[$i]}
-    if [ $? -ne 0 ]; then
-      break
+    file=${dir}/${files[$i]}
+    echo $file
+    # Skips files that do not exist and hope they were optional
+    if [  -f "$file" ]; then
+      mariadb --user=$db_user --password=$PASSWORD $database < $file
+      if [ $? -ne 0 ]; then
+        break
+      fi
+
+    # File did not exist
+    else
+      echo File does not exist. Skipping...
     fi
     draw_progress_bar $(( ($i+1)*100/$array_length ))
   done
@@ -59,3 +71,4 @@ main () {
 }
 
 main $1 $2 $3
+
