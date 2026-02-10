@@ -27,16 +27,18 @@ countries_file = pathlib.PurePath(f'{environment_prefix}setup_countries.sql')
 denominations_file = pathlib.PurePath(f'{environment_prefix}setup_denominations.sql')
 values_file = pathlib.PurePath(f'{environment_prefix}setup_values.sql')
 coins_file = pathlib.PurePath(f'{environment_prefix}setup_coins.sql')
+years_file = pathlib.PurePath(f'{environment_prefix}setup_coins_years.sql')
 
 # Ensures that files are in project_root/db directory
 cwd = pathlib.Path.cwd()
-if not cwd.name == 'db':
-    cwd = cwd / 'db'
+if not cwd.name == 'database':
+    cwd = cwd / 'database'
 log_file = cwd / log_file
 countries_file = cwd / countries_file
 denominations_file = cwd / denominations_file
 values_file = cwd / values_file
 coins_file = cwd / coins_file
+years_file = cwd / years_file
 
 db_config = {
     "host": "localhost",
@@ -50,6 +52,7 @@ queries_countries = []
 queries_denominations = []
 queries_values = []
 queries_coins = []
+queries_years = []
 
 # List of ids for items added during this session
 added_countries = []
@@ -337,10 +340,14 @@ def addCoin(information):
         query_string += f',"{information["nickname"]}"'
     query_string += f',{information["gross_weight"]},{information["fineness"]},{information["precious_metal_weight"]},{information["metal"]}"'
     query_string += ");"
-    for year in information["years"].split(","):
-        query_string += f"INSERT INTO years(coin_id,year) VALUES(\"{coin_id}\",{year});"
     log(query_string)
+    queries_coins.append(query_string)
+    query_string = ""
+    for year in information["years"].split(","):
+        query_string += f"INSERT INTO years(coin_id,year) VALUES(\"{coin_id}\",{year});\n"
     added_coins.append(f"{prefix}_{code}")
+    queries_years.append(query_string)
+    log(query_string)
     queries_coins.append(query_string)
 
 if __name__ == "__main__":
@@ -377,6 +384,7 @@ if __name__ == "__main__":
             copy_queries_denominations = copy.copy(queries_denominations)
             copy_queries_values = copy.copy(queries_values)
             copy_queries_coins = copy.copy(queries_coins)
+            copy_queries_years = copy.copy(queries_years)
 
             # List of ids for items added during this session
             copy_added_countries = copy.copy(added_countries)
@@ -473,6 +481,7 @@ if __name__ == "__main__":
                     queries_denominations = copy_queries_denominations
                     queries_values = copy_queries_values
                     queries_coins = copy_queries_coins
+                    queries_years = copy_queries_years
                     added_countries = copy_added_countries
                     added_denominations = copy_added_denominations
                     added_values = copy_added_values
@@ -502,7 +511,7 @@ if __name__ == "__main__":
 
     response = input("Append SQL to file? (y/n): ").lower()
     if response == 'y' or response == "yes":
-        for item in [(queries_countries,countries_file),(queries_denominations,denominations_file),(queries_values,values_file),(queries_coins,coins_file)]:
+        for item in [(queries_countries,countries_file),(queries_denominations,denominations_file),(queries_values,values_file),(queries_coins,coins_file),(queries_years,years_file)]:
             if item[0]:
                 for entry in item[0]:
                     log(entry,item[1])
