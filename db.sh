@@ -36,7 +36,7 @@ main () {
   printf "\n"
 
   # List of all files that will be fed into database
-  files=("setup_db.sql" "setup_countries.sql" "setup_denominations.sql" "setup_values.sql" "setup_coins.sql" "setup_coins_years.sql" "purchases.sql")
+  files=("base_setup_db.sql" "base_setup_countries.sql" "base_setup_denominations.sql" "base_setup_values.sql" "base_setup_coins.sql" "base_setup_coins_years.sql" "base_purchases.sql")
 
   # Drops and recreates database
   mariadb --user=$db_user --password=$PASSWORD -e "DROP DATABASE IF EXISTS $database; CREATE DATABASE $database;"

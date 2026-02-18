@@ -10,7 +10,8 @@ CREATE TABLE metals (
   metal_id varchar(5) PRIMARY KEY,
   name varchar(255) NOT NULL,
   price decimal(30,10) NOT NULL,
-  price_date date NOT NULL
+  price_date date NOT NULL,
+  series varchar(32) NOT NULL,
 );
 -- Metal types
 insert into metals(metal_id,name,price,price_date) values("au","gold",-1,"1000-01-01"),("ag","silver",-1,"1000-01-01"),("pd","palladium",-1,"1000-01-01"),("pt","platinum",-1,"1000-01-01"),("rh","rhodium",-1,"1000-01-01"),("other","other",-1,"1000-01-01");
@@ -27,7 +28,8 @@ CREATE TABLE countries (
   country_id varchar(255) PRIMARY KEY,
   display_name varchar(255) NOT NULL,
   tags varchar(255) default "none",
-  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
+  series varchar(32) NOT NULL
 );
 
 CREATE TABLE country_names (
@@ -42,7 +44,8 @@ CREATE TABLE denominations (
   FOREIGN KEY (country_id) REFERENCES countries(country_id) ON UPDATE CASCADE,
   display_name varchar(255) NOT NULL,
   tags varchar(255) DEFAULT "none",
-  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
+  series varchar(32) NOT NULL
 );
 
 CREATE TABLE denomination_names (
@@ -59,7 +62,8 @@ CREATE TABLE face_values (
   value decimal(20,10) NOT NULL,
   display_name varchar(255),
   tags varchar(255) DEFAULT "none",
-  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE
+  FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
+  series varchar(32) NOT NULL
 );
 
 CREATE TABLE face_values_names (
@@ -80,7 +84,8 @@ CREATE TABLE coins (
   FOREIGN KEY (tags) REFERENCES tags(tag_id) ON UPDATE CASCADE,
   metal varchar(5) NOT NULL,
   FOREIGN KEY (metal) REFERENCES metals(metal_id) ON UPDATE CASCADE,
-  name varchar(255)
+  name varchar(255),
+  series varchar(32) NOT NULL
 );
 
 CREATE TABLE years (
