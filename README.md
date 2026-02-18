@@ -50,12 +50,122 @@ from coins join years on coins.coin_id=years.coin_id join face_values on coins.f
 where coins.coin_id like "%zloty%" and years.year=1933 and face_values.value=10;
 ```  
 
-The output should look like: 
-```
+The output should look like:
+
+``` text
 +----------------+-----------------------+--------------+-------+---------------+------+
 | coin_id        | precious_metal_weight | fineness     | metal | value         | year |
 +----------------+-----------------------+--------------+-------+---------------+------+
 | pol_zloty_10_1 |          0.5305000000 | 0.7500000000 | ag    | 10.0000000000 | 1933 |
 +----------------+-----------------------+--------------+-------+---------------+------+
 ```
+
 This selected all coins from the database with "zloty" in the coin id, with face value of 10, and were minted in 1933. Assuming this worked, the database should be correctly set up. See the docs folder in the precious metals calculator repository for more in depth information about the schema and how to add new coins (or other objects made of precious metals) to the database.
+
+## Country statuses
+
+A country (or entity) can be in one of the following states:
+
+0. none: The country is acknowleged, but no plan exists for it to be implemented.
+1. absent: The country is planned but does not have enough coin data complete to qualify for the base state.
+2. base: The country has all of the coin data for its precious metal coins from at a minimum 1850-1964.
+3. refined: The country's coin data has been pruned and refined to remove years that coins were not minted in.
+4. non-precious: Coin data for all coins, even those made of non-precious metals is included for at a minimum 1850-1964
+5. polished: Same concept as refined, but with the non-precious metal coins as well.
+6. expanded: The country now includes all 'modern', mass-produced coins for general circulation that it has created. While it should cover all coins, those that are exceedingly rare can be omitted. It must include coins from up to the end of the country, or the year 2020, whichever comes first. This state must only consider coins made from precious metals.
+7. expanded-non-precious: Non precious coins that would fit the expanded state.
+8. complete: Same concept as refined and polished, but for the expanded state and expanded-non-precious.
+
+Coins from states 1-3 will belong to the **base** series. Coins from the states 4-5 will belong to the **non-precious** series. Coins from state 6 will belong to the **expansive** series. Coins from state 7 will belong to the **completion** series.
+
+| name                     | id         | state                 |
+|:------------------------:|:----------:|:---------------------:|
+| afghanistan              | afg        | base                  |
+| albania                  | alb        | base                  |
+| argentina                | arg        | base                  |
+| australia                | aus        | base                  |
+| austria                  | aut        | base                  |
+| belgium                  | bel        | base                  |
+| bulgaria                 | bgr        | base                  |
+| bermuda                  | bmu        | base                  |
+| bolivia                  | bol        | base                  |
+| brazil                   | bra        | base                  |
+| canada                   | can        | base                  |
+| switzerland              | che        | base                  |
+| chile                    | chl        | base                  |
+| china                    | chn        | base                  |
+| colombia                 | col        | base                  |
+| comoros                  | com        | base                  |
+| costa rica               | cri        | base                  |
+| czechoslovakia           | csk        | base                  |
+| cuba                     | cub        | base                  |
+| curacao                  | cuw        | base                  |
+| Cyprus                   | cyp        | base                  |
+| germany                  | deu        | base                  |
+| denmark                  | dnk        | base                  |
+| ecuador                  | ecu        | base                  |
+| egypt                    | egy        | base                  |
+| eritrea                  | eri        | base                  |
+| spain                    | esp        | base                  |
+| estonia                  | est        | base                  |
+| ethiopia                 | eth        | base                  |
+| finland                  | fin        | base                  |
+| fiji                     | fji        | base                  |
+| france                   | fra        | base                  |
+| great britain            | gbr        | base                  |
+| greece                   | grc        | base                  |
+| guatemala                | gtm        | base                  |
+| hawaii                   | haw        | base                  |
+| hong kong                | hkg        | base                  |
+| honduras                 | hnd        | base                  |
+| haiti                    | hti        | base                  |
+| hungary                  | hun        | base                  |
+| india                    | ind        | base                  |
+| ireland                  | irl        | base                  |
+| iran                     | irn        | base                  |
+| iraq                     | irq        | base                  |
+| iceland                  | isl        | base                  |
+| israel                   | isr        | base                  |
+| italy                    | ita        | base                  |
+| jamaica                  | jam        | base                  |
+| japan                    | jpn        | base                  |
+| cambodia                 | khm        | base                  |
+| korea                    | kor        | base                  |
+| kuwait                   | kwt        | base                  |
+| lebanon                  | lbn        | base                  |
+| liberia                  | lbr        | base                  |
+| liechtenstein            | lie        | base                  |
+| lithuania                | ltu        | base                  |
+| luxembourg               | lux        | base                  |
+| latvia                   | lva        | base                  |
+| macau                    | mac        | base                  |
+| morocco                  | mar        | base                  |
+| mexico                   | mex        | base                  |
+| myanmar                  | mmr        | base                  |
+| mongolia                 | mng        | base                  |
+| newfoundland             | nfl        | base                  |
+| netherlands, the         | nld        | base                  |
+| norway                   | nor        | base                  |
+| nepal                    | npl        | base                  |
+| new zealand              | nzl        | base                  |
+| panama                   | pan        | base                  |
+| peru                     | per        | base                  |
+| philippines              | phl        | base                  |
+| poland                   | pol        | base                  |
+| portugal                 | prt        | base                  |
+| paraguay                 | pry        | base                  |
+| romania                  | rou        | base                  |
+| russia                   | rus        | base                  |
+| saudi arabia             | sau        | base                  |
+| el salvador              | slv        | base                  |
+| serbia                   | srb        | base                  |
+| suriname                 | sur        | base                  |
+| sweden                   | swe        | base                  |
+| syria                    | syr        | base                  |
+| thailand                 | tha        | base                  |
+| turkey                   | tur        | base                  |
+| united arab republic     | uar        | base                  |
+| uruguay                  | ury        | base                  |
+| united states of america | usa        | base                  |
+| venezuela                | ven        | base                  |
+| south africa             | zaf        | base                  |
