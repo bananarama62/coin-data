@@ -2,28 +2,32 @@
 This repository will serve as the storage location for files that can be used to build the database needed for the precious metal calculator program found at: https://github.com/JMGillum/melt-calculator. The SQL files are what are needed to build the database. They are written in MySQL, so MySQL or MariaDB will be required (the melt-calculator program uses MariaDB, so this is recommended).   
 
 # Installation
-The first step before these files can be loaded into a database system, is to have the database system installed. We will use MariaDB, as that is what the program was written for and tested with. Follow the instructions: https://mariadb.com/docs/server/mariadb-quickstart-guides/installing-mariadb-server-guide to install MariaDB, then return here.
+The first step before these files can be loaded into a database system, is to have the database system installed. We will use MariaDB, as that is what the program was written for and tested with. Follow the instructions: [https://mariadb.com/docs/server/mariadb-quickstart-guides/installing-mariadb-server-guide](https://mariadb.com/docs/server/mariadb-quickstart-guides/installing-mariadb-server-guide) to install MariaDB, then return here.
 
 ## Automatic
-Contained within this repository is the bash script: `db.sh`, which handles loading all of the files into the database system for you. All that you have to do is to invoke the script with at least two arguments: the user to connect to the database with, the name of the database to use, and optionally: the path to the directory storing the SQL files, which is ./ (unless you moved them).  
+Contained within this repository is the bash script: `db.sh`, which handles loading of all of the files into the database system for you. All that you have to do is to invoke the script with at least two arguments: the user to connect to the database with, the name of the database to use, and optionally: the path to the directory storing the SQL files, which is ./ (unless you moved them).  
 Ex: `./db.sh root coin_data` or optionally: `./db.sh root coin_data ./`  
 The script will prompt you as needed, and will load all of the files into the database system as needed. 
 
 ## Manual
 The files must be loaded into the database system in the following order:
-1. setup_db.sql -> This creates all of the tables for the database.
-2. setup_countries.sql -> This stores all of the data for the countries.
-3. setup_denominations.sql -> This stores all of the data for the monetary denominations.
-4. setup_values.sql -> This stores all of the data for the coin face values.
-5. setup_coins.sql -> This stores all of the data for individual coins.
-6. setup_coins_years.sql -> This stores all of the years that the coins were available in.
-7. purchases.sql -> This file is absent from the repository. It will be created throughout usage of the program. It stores any coin purchases made.
+1. base_setup_db.sql -> This creates all of the tables for the database.
+2. base_setup_countries.sql -> This stores all of the data for the countries.
+3. base_setup_denominations.sql -> This stores all of the data for the monetary denominations.
+4. base_setup_values.sql -> This stores all of the data for the coin face values.
+5. base_setup_coins.sql -> This stores all of the data for individual coins.
+6. base_setup_coins_years.sql -> This stores all of the years that the coins were available in.
+7. base_purchases.sql -> This file is absent from the repository. It will be created throughout usage of the program. It stores any coin purchases made.
 
 Each file builds upon the last, so they must be ran in this exact order (otherwise your computer will explode).
 
+> [!Note]
+> If you have any custom items, they should be added after all of the base items are added. Follow the same order through your custom items.
+
 ## Testing
 To check that everything worked, you can log into MariaDB with: `mariadb -u <user> -p <database_name>`. Then enter: `show tables`. This will bring up the name of every table in this database. The output should look like:  
-```
+
+``` text
 +---------------------+  
 | Tables_in_coin_data |  
 +---------------------+  
@@ -44,10 +48,12 @@ To check that everything worked, you can log into MariaDB with: `mariadb -u <use
 ```
 
 If you have less tables than this, one of the SQL files was not loaded properly. Assuming you have all of the correct tables, enter the following SQL query:  
-```
-select coins.coin_id,precious_metal_weight,fineness,metal,value,year
-from coins join years on coins.coin_id=years.coin_id join face_values on coins.face_value_id=face_values.value_id
-where coins.coin_id like "%zloty%" and years.year=1933 and face_values.value=10;
+
+``` SQL
+SELECT coins.coin_id,precious_metal_weight,fineness,metal,value,year
+FROM coins JOIN years ON coins.coin_id=years.coin_id JOIN face_values ON 
+coins.face_value_id=face_values.value_id
+WHERE coins.coin_id LIKE "%zloty%" AND years.year=1933 AND face_values.value=10;
 ```  
 
 The output should look like:
@@ -69,16 +75,16 @@ A country (or entity) can be in one of the following states:
 0. none: The country is acknowleged, but no plan exists for it to be implemented.
 1. absent: The country is planned but does not have enough coin data complete to qualify for the base state.
 2. base: All precious metal coins for the country minted from 1850-1964 are present. Years for individual coins can be overly broad, to fill in gaps. All years that the coin was made in must be present though.
-3. refined: The mintage years for all coins must be accurate. No more filling in of gaps.
+3. refined: The mintage years for all coins must be accurate. No more filling in of gaps. This state should not add any new content, it should only remove years that the coins weren't minted in.
 4. expanded: All precious metal coins minted by the country in all years are present. Similarly to base state, gaps may be filled.
 5. complete: All gaps are unfilled and mintage years must be accurate.
 6. complete+: Introduces all non-precious metal coins of all years. Gaps may be filled.
 7. complete++: All gaps must be unfilled. All coins minted for general circulation that the country has ever minted are present.
 
-The four official series for entries will be:
-* **base** for entries for the base and refined states
-* **expanded** for entries for the expanded and complete states
-* **non-precious** for entries for the complete+ and complete++ states
+The official series for entries will be:
+* **base** for entries for the base state
+* **expanded** for entries for the expanded state
+* **non-precious** for entries for the complete+ state
 
 | name                     | id         | state                 |
 |:------------------------:|:----------:|:---------------------:|
