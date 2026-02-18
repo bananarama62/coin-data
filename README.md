@@ -76,7 +76,7 @@ A country (or entity) can be in one of the following states:
 7. expanded-non-precious: Non precious coins that would fit the expanded state.
 8. complete: Same concept as refined and polished, but for the expanded state and expanded-non-precious.
 
-Coins from states 1-3 will belong to the **base** series. Coins from the states 4-5 will belong to the **non-precious** series. Coins from state 6 will belong to the **expansive** series. Coins from state 7 will belong to the **completion** series.
+Coins from states 1-3 will belong to the **base** series. Coins from the states 4-5 will belong to the **non-precious** series. Coins from state 6 will belong to the **expanded** series. Coins from state 7 will belong to the **completion** series.
 
 | name                     | id         | state                 |
 |:------------------------:|:----------:|:---------------------:|
@@ -169,3 +169,49 @@ Coins from states 1-3 will belong to the **base** series. Coins from the states 
 | united states of america | usa        | base                  |
 | venezuela                | ven        | base                  |
 | south africa             | zaf        | base                  |
+| arabian sultanate (yemen)| N/A        | absent                |
+| belgian congo            | N/A        | absent                |
+| british guiana           | N/A        | absent                |
+| british honduras         | N/A        | absent                |
+| british north borneo     | N/A        | absent                |
+| british west africa      | N/A        | absent                |
+| ceylon                   | N/A        | absent                |
+| crete                    | N/A        | absent                |
+| danish west indies       | N/A        | absent                |
+| danzig                   | N/A        | absent                |
+| dominican republic       | N/A        | absent                |
+| east africa              | N/A        | absent                |
+| french cochin china      | N/A        | absent                |
+| french indo-china        | N/A        | absent                |
+| german east africa       | N/A        | absent                |
+| german new guinea        | N/A        | absent                |
+| hejaz                    | N/A        | absent                |
+| italian somaliland       | N/A        | absent                |
+| katanga                  | N/A        | absent                |
+| malaya and british borneo| N/A        | absent                |
+| mauritius                | N/A        | absent                |
+| mobasa                   | N/A        | absent                |
+| monaco                   | N/A        | absent                |
+| montenegro               | N/A        | absent                |
+| mozambique               | N/A        | absent                |
+| muscat and oman          | N/A        | absent                |
+| netherland antilles, the | N/A        | absent                |
+| new brunswick            | N/A        | absent                |
+| new caledonia            | N/A        | absent                |
+| new guinea               | N/A        | absent                |
+| nicaragua                | N/A        | absent                |
+| nigeria- bri. west africa| N/A        | absent                |
+| palestine                | N/A        | absent                |
+| portuguese india         | N/A        | absent                |
+| puerto rico              | N/A        | absent                |
+| rhodesia, southern       | N/A        | absent                |
+| st. thomas and prince    | N/A        | absent                |
+| san marino               | N/A        | absent                |
+| sarawak                  | N/A        | absent                |
+| seychelles               | N/A        | absent                |
+| south african republic   | N/A        | absent                |
+| straits settlements      | N/A        | absent                |
+| timor                    | N/A        | absent                |
+| vatican city             | N/A        | absent                |
+| yugoslavia               | N/A        | absent                |
+| zanzibar                 | N/A        | absent                |
