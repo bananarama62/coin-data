@@ -68,15 +68,17 @@ A country (or entity) can be in one of the following states:
 
 0. none: The country is acknowleged, but no plan exists for it to be implemented.
 1. absent: The country is planned but does not have enough coin data complete to qualify for the base state.
-2. base: The country has all of the coin data for its precious metal coins from at a minimum 1850-1964.
-3. refined: The country's coin data has been pruned and refined to remove years that coins were not minted in.
-4. non-precious: Coin data for all coins, even those made of non-precious metals is included for at a minimum 1850-1964
-5. polished: Same concept as refined, but with the non-precious metal coins as well.
-6. expanded: The country now includes all 'modern', mass-produced coins for general circulation that it has created. While it should cover all coins, those that are exceedingly rare can be omitted. It must include coins from up to the end of the country, or the year 2020, whichever comes first. This state must only consider coins made from precious metals.
-7. expanded-non-precious: Non precious coins that would fit the expanded state.
-8. complete: Same concept as refined and polished, but for the expanded state and expanded-non-precious.
+2. base: All precious metal coins for the country minted from 1850-1964 are present. Years for individual coins can be overly broad, to fill in gaps. All years that the coin was made in must be present though.
+3. refined: The mintage years for all coins must be accurate. No more filling in of gaps.
+4. expanded: All precious metal coins minted by the country in all years are present. Similarly to base state, gaps may be filled.
+5. complete: All gaps are unfilled and mintage years must be accurate.
+6. complete+: Introduces all non-precious metal coins of all years. Gaps may be filled.
+7. complete++: All gaps must be unfilled. All coins minted for general circulation that the country has ever minted are present.
 
-Coins from states 1-3 will belong to the **base** series. Coins from the states 4-5 will belong to the **non-precious** series. Coins from state 6 will belong to the **expanded** series. Coins from state 7 will belong to the **completion** series.
+The four official series for entries will be:
+* **base** for entries for the base and refined states
+* **expanded** for entries for the expanded and complete states
+* **non-precious** for entries for the complete+ and complete++ states
 
 | name                     | id         | state                 |
 |:------------------------:|:----------:|:---------------------:|
